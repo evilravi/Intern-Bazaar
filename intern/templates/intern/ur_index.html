@@ -1,0 +1,75 @@
+{% extends 'intern/base.html' %}
+{% block albums_active %}active{% endblock %}
+{% load staticfiles %}
+{% block body%}
+<br>
+<br>
+ <link rel="stylesheet" type="text/css" href="static/intern/2-col-portfolio.css">
+ <div class="container">
+
+      <!-- Page Heading -->
+     <a href="http://127.0.0.1:8000/internship/create/">
+     <h3 align="right">Create an Internship</h3>
+        </a>
+
+
+      <h1 class="my-4" align="center">BUSSINESS BLOCK
+
+<br>
+        <small>YOUR INTERNSHIPS</small>
+      </h1>
+	{% for internship in ur_internship %}
+      <div class="row">
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{%url 'intern:detail' internship.id %}"><img class="card-img-top" src="{{ internship.company_logo.url }}" alt="NO IMAGE" width="250px" height="250px"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="{%url 'intern:detail' internship.id %}">{{internship.company}}</a>
+              </h4>
+              <p class="card-text">{{internship.about}}</p>
+            </div>
+          </div>
+        </div>
+
+
+      {%endfor%}
+      </div>
+     <div>
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; InternBazaar 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+<br>
+{%endblock%}

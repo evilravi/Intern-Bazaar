@@ -1,0 +1,85 @@
+{% extends 'intern/base.html' %}
+{% block title %}{{ internship }}{% endblock %}
+{% block internships_active %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid intern-container">
+
+    <div class="row">
+
+        <!-- Left internship Info -->
+        <div class="col-sm-4 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{% url 'intern:detail' internship.id %}">
+                        {% if internship.company_logo %}
+                            <img src="{{ internship.company_logo.url }}" class="img-responsive">
+                        {% else %}
+                            <h3>No image to display</h3>
+                        {% endif %}
+                    </a>
+                    <h1> Comapany name</h1>
+                    <h2>{{internship.Post}}</h2>
+                    <h1> <small>{{ internship.about }}</small></h1>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Song Info -->
+        <div class="col-sm-8 col-md-9">
+
+            <ul class="nav nav-pills" style="margin-bottom: 10px;">
+                <li role="presentation" class="active"><a href="{% url 'intern:detail' internship.id %}">View All</a></li>
+            </ul>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <h3>INTERNSHIP</h3>
+
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+
+                    <table class="table">
+
+                        <tr>
+                            <th>Role</th>
+                            <td>{{internship.role}}</td>
+
+                        </tr>
+
+                            <th>Time Span</th>
+                        <td>{{internship.time}}</td>
+
+                        <tr>
+
+                            <th>Favorite</th>
+                            <td>star</td>
+
+                        </tr>
+
+                         <tr>
+                            <th>Benefits</th>
+                             <td>{{internship.benefits}}</td>
+
+                         </tr>
+                    </table>
+                                        <form action="#" method="post" style="display: inline;">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="internship_id" value="{{internship.id}}" />
+                                        <button type="submit" class="btn btn-success btn-xs">
+                                            <span class="glyphicon glyphicon-ok"></span>&nbsp; Apply
+                                        </button>
+                                    </form>
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

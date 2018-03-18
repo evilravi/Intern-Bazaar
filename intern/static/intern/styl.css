@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: "PT Sans", Arial, serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #666666;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #FA5555;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #FA5555;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "PT Sans", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #00ADB5;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #00ADB5;
+}
+
+::selection {
+  color: #fff;
+  background: #00ADB5;
+}
+
+#fh5co-header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+}
+#fh5co-header .navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#fh5co-header #navbar .navbar-right {
+  margin-right: 0;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header #navbar .navbar-right {
+    padding-bottom: 20px;
+  }
+}
+
+#fh5co-header #navbar li a {
+  font-family: "PT Sans", Arial, serif;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header #navbar li a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    font-size: 20px;
+  }
+}
+#fh5co-header #navbar li a span {
+  position: relative;
+  display: block;
+  padding-bottom: 2px;
+}
+#fh5co-header #navbar li a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -17px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#fh5co-header #navbar li a:hover {
+  color: #000;
+}
+#fh5co-header #navbar li a:hover span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#fh5co-header #navbar li.active a {
+  background: transparent;
+  background: none;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header #navbar li.active a {
+    color: #FA5555;
+  }
+}
+#fh5co-header #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #FA5555;
+}
+@media screen and (max-width: 480px) {
+  #fh5co-header #navbar li.active a span:before {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header #navbar li.active a {
+    background: transparent;
+    background: none;
+  }
+}
+@media screen and (max-width: 992px) and (max-width: 480px) {
+  #fh5co-header #navbar li.active a {
+    color: #FA5555;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header #navbar li.active a span {
+    display: inline-block;
+    color: #FA5555;
+  }
+  #fh5co-header #navbar li.active a span:before {
+    bottom: 0;
+    height: 0;
+    background: transparent;
+  }
+}
+#fh5co-header #navbar li.call-to-action {
+  margin-left: 5px;
+}
+#fh5co-header #navbar li.call-to-action a {
+  padding: 5px 10px 3px 10px;
+  margin: 12px 0 0 0px;
+  color: #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+#fh5co-header #navbar li.call-to-action a:hover {
+  background-color: #FA5555;
+  color: #fff;
+}
+#fh5co-header #navbar li.call-to-action a span:before {
+  background-color: transparent;
+}
+#fh5co-header #navbar li.call-to-action a.sign-up {
+  border: 2px solid #00ADB5;
+  background: #00ADB5;
+}
+#fh5co-header #navbar li.call-to-action a.sign-up:hover {
+  background: #00ADB5;
+  color: #fff;
+}
+#fh5co-header #navbar li.call-to-action a.log-in {
+  border: 2px solid #FA5555;
+  background: #FA5555;
+}
+#fh5co-header #navbar li.call-to-action a.log-in:hover {
+  background: #FA5555;
+  color: #fff;
+}
+#fh5co-header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 28px;
+  color: #535659;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+}
+#fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 173, 181, 0.6);
+  left: -12px;
+  margin-left: 0px;
+  bottom: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#fh5co-header .navbar-brand:before {
+  left: 0px;
+  background: rgba(250, 85, 85, 0.8);
+}
+#fh5co-header .navbar-brand > span {
+  color: #FA5555;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header .navbar-brand {
+    padding-left: 55px !important;
+    padding-right: 0 !important;
+  }
+  #fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
+    margin-left: 25px;
+  }
+}
+#fh5co-header.navbar-fixed-top {
+  position: fixed !important;
+  background: #fff;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  top: 0;
+}
+#fh5co-header.navbar-fixed-top .navbar-brand {
+  color: #535659;
+}
+#fh5co-header.navbar-fixed-top #navbar li a {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#fh5co-header.navbar-fixed-top #navbar li a:hover {
+  color: #FA5555;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header.navbar-fixed-top #navbar li a {
+    font-size: 20px;
+  }
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a {
+  color: #FA5555 !important;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header.navbar-fixed-top #navbar li.active a {
+    color: #FA5555 !important;
+  }
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #FA5555;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+    background-color: transparent;
+  }
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a {
+  border: 2px solid #FA5555;
+  padding: 5px 10px 3px 10px;
+  margin: 12px 0 0 0px;
+  color: #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a:hover {
+  background-color: #FA5555;
+  color: #fff !important;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a span:before {
+  background-color: transparent;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.sign-up {
+  border: 2px solid #00ADB5;
+  background: #00ADB5;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.sign-up:hover {
+  background: #00ADB5;
+  color: #fff;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in {
+  border: 2px solid #FA5555;
+  background: #FA5555;
+}
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in:hover {
+  background: #FA5555;
+  color: #fff;
+}
+#fh5co-header .navbar-default {
+  border: transparent;
+  background: #fff;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

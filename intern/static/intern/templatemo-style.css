@@ -1,0 +1,122 @@
+/* 
+
+Classic Template
+
+http://www.templatemo.com/tm-488-classic
+
+-----------------------------*/
+
+body {
+	color: #8c8c8c;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+a, button { transition: all 0.3s ease; }
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+h2 { font-size: 2.2rem; }
+.tm-thin-font { font-weight: 300; }
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1390px;
+	overflow-x: hidden;
+}
+
+@media (max-width: 1390px) {
+	.container-fluid {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+.tm-header-inner {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 100px;
+}
+
+.tm-site-name {
+	color: #cc9900;
+	display: block;
+	font-size: 2.6rem;
+	font-weight: 400;
+}
+
+.tm-gold-text { color: #cc9900; }
+
+.tm-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.tm-home-img-container {
+	background-image: url('images/tm-home-img.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+
+
+}
+
+.tm-title {
+	margin-bottom: 1rem;
+	line-height: 1.4;
+}
+
+.tm-subtitle {
+	font-size: 1.4rem;
+	max-width: 800px;
+	margin: 0 auto 80px;
+}
+
+.tm-content-box {
+	max-width: 310px;
+	margin: 0 auto;
+}
+
+h3 { font-size: 1.65rem; }
+h4 { 
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+.tm-btn {
+	color: white;
+	background-color: #cc9900;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+.tm-btn:hover,
+.tm-btn:focus {
+	background-color: #906E09;
+	color: white;
+	outline: none;
+}
+
+.tm-btn-gray { background-color: #666666; }
+.tm-btn-gray:hover,
+.tm-btn-gray:focus {
+	background-color: #515050;	
+}
+
+
