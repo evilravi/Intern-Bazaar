@@ -20,7 +20,7 @@ urlpatterns = [
     url(r'^internship/create/$', views.create_internship.as_view(), name='create_internship'),
     url(r'^internship/(?P<pk>[0-9]+)/$', views.ap_detail.as_view(), name='view_internship'),
 
-    url(r'^on_business$', views.new, name='new'),
+    url(r'^on_business/$', views.new, name='new'),
     url(r'^on_business/(?P<pk>[0-9]+)/$', views.detail.as_view(), name='detail'),
     url(r'^on_business/(?P<pk>[0-9]+)/delete/$', views.delete_internship.as_view(), name='delete_internship'),
     url(r'^on_business/update/(?P<pk>[0-9]+)$', views.update_internship.as_view(), name='update_internship'),
