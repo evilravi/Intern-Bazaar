@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <!-- Right Song Info -->
+
         <div class="col-sm-8 col-md-9">
 
             <ul class="nav nav-pills" style="margin-bottom: 10px;">
@@ -66,7 +66,7 @@
 
                          </tr>
                     </table>
-                                        <form action="#" method="post" style="display: inline;">
+                                        <form action="{% url 'intern:apply' internship.id %}" method="post" style="display: inline;">
                                         {% csrf_token %}
                                         <input type="hidden" name="internship_id" value="{{internship.id}}" />
                                         <button type="submit" class="btn btn-success btn-xs">
